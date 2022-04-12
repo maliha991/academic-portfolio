@@ -1,0 +1,39 @@
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  @include flex(row, center, space-between);
+  text-align: center;
+  flex-wrap: wrap;
+  h2 {
+    margin: 5rem;
+  }
+}
+
+.travelly,
+.elena,
+.todo,
+.beatmaker {
+  flex: 1 1 40rem;
+}
+
+.beatmaker {
+  margin: 0 2rem 2rem 2rem;
+}
+
+.pro-pd {
+  background: linear-gradient(
+    120deg,
+    rgba(35, 25, 66, 0.6),
+    rgba(35, 25, 66, 0.45)
+  );
+  min-height: 7vh;
+  width: fit-content;
+  border-radius: 1rem;
+
+  p {
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.3rem 0 0.5rem;
+  }
+}

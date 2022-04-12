@@ -1,0 +1,22 @@
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #7687a8, #103783);
+$background-color: #5e548e;
+$gray-text: #2c2c2c;
+
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@import "global";
+@import "intro";
+@import "about";
+@import "projects";
+@import "academics";
+@import "footer";

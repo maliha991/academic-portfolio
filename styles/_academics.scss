@@ -1,0 +1,163 @@
+.academics {
+  min-height: 90vh;
+  width: 97%;
+  margin: 0 0 0 auto;
+  @include flex(row, center, space-between);
+  flex-wrap: wrap;
+}
+
+.academics-text {
+  flex: 1 1 5rem;
+}
+
+.academics-images {
+  flex: 0 1 5rem;
+}
+
+.work {
+  h2 {
+    margin: 2rem 0;
+  }
+  li {
+    margin: 1rem 0;
+  }
+}
+
+.first {
+  margin-left: 1rem;
+}
+
+.var {
+  color: #483f75;
+}
+
+.var:hover {
+  text-decoration-line: underline;
+}
+
+.education {
+  h2 {
+    margin: 3.5rem 0 2rem 0;
+  }
+}
+
+.edu-table {
+  width: 95%;
+  border-collapse: collapse;
+}
+
+.edu-table th,
+.edu-table td {
+  font-size: $text;
+  text-align: center;
+  padding: 1rem 1.5rem 1rem 1rem;
+  border-bottom: 2px solid rgb(216, 215, 215);
+}
+
+#pencil {
+  animation: pencil 1s ease-in-out alternate-reverse infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#left-leaf {
+  animation: left-leaf 1.5s linear alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#right-leaf {
+  animation: right-leaf 1.5s linear alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#cloud-3 {
+  animation: cloud-3 1.2s ease-in-out alternate-reverse infinite;
+}
+
+#cloud-2 {
+  animation: cloud-2 1.7s ease-in-out alternate-reverse infinite;
+}
+
+#cloud-1 {
+  animation: cloud-1 1.1s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes pencil {
+  from {
+    transform: rotateZ(2deg) rotateY(-3deg);
+  }
+  to {
+    transform: rotateZ(-90deg) rotateZ(-1deg);
+  }
+}
+
+@keyframes left-leaf {
+  from {
+    transform: rotateZ(0deg) translateY(0%);
+  }
+  to {
+    transform: rotateZ(50deg) translateY(3%);
+  }
+}
+
+@keyframes right-leaf {
+  from {
+    transform: rotateZ(0deg) translateY(0%);
+  }
+  to {
+    transform: rotateZ(-50deg) translateY(-3%);
+  }
+}
+
+@keyframes cloud-3 {
+  from {
+    transform: translateX(8%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes cloud-2 {
+  from {
+    transform: translateX(5%);
+  }
+  to {
+    transform: translateX(-5%);
+  }
+}
+
+@keyframes cloud-1 {
+  from {
+    transform: translateX(-6%);
+  }
+  to {
+    transform: translateX(1%);
+  }
+}
+
+.academics {
+  position: relative;
+}
+
+.aca-pd {
+  background: linear-gradient(
+    120deg,
+    rgba(35, 25, 66, 0.6),
+    rgba(35, 25, 66, 0.45)
+  );
+  min-height: 7vh;
+  width: fit-content;
+  position: absolute;
+  bottom: 0%;
+  right: 1%;
+  border-radius: 1rem;
+
+  p {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0.5rem 0.3rem 0 0.5rem;
+  }
+}
